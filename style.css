@@ -1,0 +1,57 @@
+body {
+	font-family:Inconsolata;
+	background-color: white;
+}
+
+.imglinks {
+	width: 33.33%;
+	float: left;
+}
+
+.imglinks img {
+	margin: 3px;
+	height: 200px;
+}
+
+.logo img {
+	float:left;
+	position: absolute;
+	height: 100%;	
+	font-size:40px;
+}
+
+
+ul { 
+  background-color: white;
+  list-style-type: none;	/*specifies li marker (eg bullet pt*/
+  margin: 3px 3px 3px 3px;			/*space betw ul element and other elements*/			
+  padding: 0;                   /*space between lis and ul element*/
+  overflow: hidden;		/*ensure links don't "spill out" of container*/
+  position: -webkit-sticky; 	/* Safari */
+  position: sticky;		/*keep navbar in place when scrolling down*/
+  top: 100px;
+}
+
+li {
+  float: right;			/*position links on right side*/
+}
+
+
+li a {
+  display: block;		/*display links as block elements (no effect because of float*/
+  color: blue;			/*link clolors are blue*/
+  text-align: center;		/*center links in their container*/
+  padding: 14px 16px;		/*give space between links and other elements*/
+  text-decoration: none;	/*do not design link text*/
+}
+
+
+li a:hover {
+  background-color: #111;	/*change background color of link when mouse hovers over it*/
+}
+
+
+.active {
+  background-color: #4CAF50;	/*specify that one link (with active class) has diff style than rest*/
+}
+
